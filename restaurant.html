@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spice Route Restaurant</title>
+    </head>
+
+    <body>
+
+        <!-- Problem statement: 
+         Build a restaurant menu page using only HTML. 
+         Requirements:
+         1. Page title: Spice Route Restaurant
+         2. Main heading <h1>: Spice Route
+         3. Short description paragraph
+         4. Menu sections: Starters, Main course, desserts
+         5. unordered lists with price
+         6. Opening hours table
+         7. Reservation form with proper labels
+         8. Semantic HTMl tags
+         --> 
+
+    <header>
+        <h1>Spice Router</h1>
+        <p>Welcome to Spice Route - serving authentic flavours with a modern touch.</p>
+    </header>
+
+    <hr>
+
+    <main> 
+        <section>
+            <h2>Starters</h2>
+            <ul>
+                <li>Paneer Tikka - Rs.220</li>
+                <li>Veg Spring Roll - Rs.180</li>
+                <li>Chicken Wings - Rs.260</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Main Course</h2>
+            <ul>
+                <li>Butter Chicken - Rs.320</li>
+                <li>Veg Biryani - Rs.250</li>
+                <li>Dal Makhani - Rs.210</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desserts</h2>
+            <ul>
+                <li>Gulab Jamun - Rs. 120</li>
+                <li>Ice Cream - Rs. 100</li>
+                <li>Brownie - Rs.150</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Opening Hours</h2>
+            <table border="1">
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Time</th>
+                </tr>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>11:00 AM - 10:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>12:00 PM - 11.00 PM</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Book a Table</h2>
+
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="guests">Number of Guests:</label><br>
+                <select id="guests" name="guests">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select><br><br>
+
+                <input type="submit" value="Reserve">
+            </form>
+        </section>
+
+        <section>
+            <h2>Our Special</h2>
+            <img src="food.jpg" alt="special dish from spice route restaurant" width="300">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Spice Route Restaurant</p>
+    </footer>
+    </body>
+</html>

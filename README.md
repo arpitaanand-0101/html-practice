@@ -9,3 +9,10 @@ This repository contains my practice files while learning HTML from scratch.
 - Forms and inputs
 
 This repo will be updated regularly as I learn more.
+
+## Screenshots
+
+![Homepage](homepage.png)
+![Form](form.png)
+
+

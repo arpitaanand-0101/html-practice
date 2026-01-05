@@ -1,124 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFest 2026</title>
+</head>
+<body>
 
-    <body>
+<header>
+    <h1>TechFest 2026</h1>
+    <p>Annual technical festival celebrating innovation, learning, and technology.</p>
+</header>
 
-        <!-- 
-        Problem statement:
-        Build a  simple College Event Page(HTML only)
-        Requirements:
-        1. Page title: Techfest 2026
-        2. Main heading <h1>: Techfest 2026
-        3. Event description paragrapgh
-        4. Event details (unordered list): Date, Time, Venue, Organizer
-        5. Event schedule (table): Time, Event, Speaker (3 rows)
-        6. Registration form: Name, Email, Branch (dropdown), year(radio buttons), register button
-        7. Semantic HTML: <header>, <main>, <section>, <footer>
-        8. Optional: Image (event poster), link to college website, horizontal rule <hr>
-        
-        Goal: Practice HTML fundamentals including headings, paragraphs, lists, tables, forms, links, images and semantic tags.
-        -->
+<hr>
 
-        <header>
-            <h1> TechFest 2026 </h1>
-            <p> Annual technical festival celebrating innovation, learning, and technology. </p>
-        </header>
+<main>
 
-        <hr>
+    <!-- Event Details -->
+    <section>
+        <h2>Event Details</h2>
+        <ul>
+            <li><strong>Date:</strong> March 15, 2026</li>
+            <li><strong>Time:</strong> 10:00 AM onwards</li>
+            <li><strong>Venue:</strong> Main Auditorium</li>
+            <li><strong>Organizer:</strong> Computer Science Department</li>
+        </ul>
+    </section>
 
-        <main>
+    <!-- Event Schedule -->
+    <section>
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Speaker</th>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Web Development Workshop</td>
+                <td>Faculty</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>Hackathon</td>
+                <td>Alumni</td>
+            </tr>
+        </table>
+    </section>
 
-            <!-- Event details -->
-             <section>
-                <h2> Event details </h2>
-                <ul>
-                    <li><strong> Date: </strong> March 15, 2026 </li>
-                    <li><strong> Time: </strong> 10.00 AM onwards </li>
-                    <li><strong> Venue: </strong> Main auditorium </li>
-                    <li><strong> Organizer: </strong> Computer Science Department </li>
-                </ul>
-             </section>
+    <!-- Registration Form -->
+    <section>
+        <h2>Register Now</h2>
 
-             <!-- Event Schedule -->
-              <section>
-                <h2> Event Schedule </h2>
-                <table border="1">
-                    <tr>
-                        <th>Time</th>
-                        <th>Event</th>
-                        <th>Speaker</th>
-                    </tr>
-                    <tr>
-                        <td>10.00 AM</td>
-                        <td>Opening ceremony</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>11.00 AM</td>
-                        <td>Web Development Workshop</td>
-                        <td>Faculty</td>
-                    </tr>
-                    <tr>
-                        <td>2.00 PM</td>
-                        <td>Hackathon</td>
-                        <td>Alumni</td>
-                    </tr>
-                </table>
-              </section>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
 
-              <!-- Registration Form -->
-               <section>
-                <h2> Register Now </h2>
-                <form>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br><br>
+            <label for="branch">Branch:</label><br>
+            <select id="branch" name="branch">
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+            </select><br><br>
 
-                    <label for="branch">Branch:</label><br>
-                    <select id="branch" name="branch">
-                        <option>Computer Science</option>
-                        <option>Information Technology</option>
-                        <option>Electronics</option>
-                        <option>Mechanical</option>
-                    </select><br><br>
+            <label>Year:</label><br>
+            <input type="radio" name="year"> First Year<br>
+            <input type="radio" name="year"> Second Year<br>
+            <input type="radio" name="year"> Third Year<br>
+            <input type="radio" name="year"> Fourth Year<br><br>
 
-                    <label>Year:</label><br>
-                    <input type="radio" name="year"> First year<br>
-                    <input type="radio" name="year"> Second year<br>
-                    <input type="radio" name="year"> Third year<br>
-                    <input type="radio" name="year"> Fourth year<br>
+            <input type="submit" value="Register">
+        </form>
+    </section>
 
-                    <input type="submit" value="Register">
-                </form>
-               </section>
+    <!-- Event Poster -->
+    <section>
+        <h2>Event Poster</h2>
+        <img src="poster.jpg" alt="TechFest 2026 Poster" width="300">
+    </section>
 
-               <!-- Event poster -->
-                <section>
-                    <h2> Event Poster </h2>
-                    <img src="Poster.jpg" alt="Techfest 2026 Poster" width="360">
-                </section>
+    <!-- College Website -->
+    <section>
+        <h2>Learn More</h2>
+        <a href="https://www.examplecollege.edu" target="_blank">
+            Visit College Website
+        </a>
+    </section>
 
-                <!-- College Website -->
-                 <section>
-                    <h2> Learn More </h2>
-                    <a href="https://www.examplecollege.edu" target="_blank">
-                        Visit College Website 
-                    </a>
-                 </section>
+</main>
 
-        
-        </main>
+<footer>
+    <p>&copy; 2026 TechFest Committee</p>
+</footer>
 
-        <footer>
-            <p>&copy; 2026 TechFest Committee</p>
-        </footer>
-        
-    </body>
-
+</body>
 </html>

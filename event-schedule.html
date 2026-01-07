@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Schedule</title>
+    </head>
+    <body>
+
+        <!-- Problem statement: Create an event schedule page using only HTML -->
+
+        <header>
+            <h1> Tech Conference 2026 </h1>
+            <p>Date: <time datetime="2026-03-15">March 15, 2026</time></p>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Schedule</h2>
+
+                <table border="1">
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Session</th>
+                        <th scope="col">Speaker</th>
+                    </tr>
+                    <tr>
+                        <td>10.00 AM</td>
+                        <td>Opening Keynote</td>
+                        <td>Dr. Ananya Rao</td>
+                    </tr>
+                    <tr>
+                        <td>02.00 PM</td>
+                        <td>AI in Everyday Applications</td>
+                        <td>Neha Sharma</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Speakers</h2>
+
+                <article>
+                    <h3>Dr. Ananya Rao</h3>
+                    <p>A tchnology researcher with over 15 years of experience in innovation and education.</p>
+                </article>
+
+                <article>
+                    <h3>Rahul Mehta</h3>
+                    <p>A full-stack developer specializing in scalable web applications.</p>
+                </article>
+
+                <article>
+                    <h3>Neha Sharma</h3>
+                    <p>An AI engineer focused on building practical and ethical AI systems.</p>
+                </article>
+
+            </section>
+
+            <section>
+                <h2>Register</h2>
+
+                <form> 
+                    <label for="reg-name">Name:</label><br>
+                    <input type="text" id="reg-name" name="reg-name"><br><br>
+
+                    <label for="reg-email">Email:</label><br>
+                    <input type="email" id="reg-email" name="reg-email"><br><br>
+
+                    <label for="session">Session Preference:</label><br>
+                    <select id="session" name="session">
+                        <option value="keynote">Opening Keynote</option>
+                        <option value="web">Future of Web Development</option>
+                        <option value="ai">AI in everyday applications</option>
+                    </select><br><br>
+
+                    <input type="submit" value="Register">
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Tech Conference</p>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!-- Problem Statement: Create an Online Learning Platform Course Page using only HTMl
+  requirements:
+  1. page title: Online COurse Platform
+  2. Webiste header with:
+    - Platform name
+    - navigation links(Home, Courses, About, Contact)
+  3. Main course displayed as an <article>:
+    - course title
+    - instructor name
+    - course description
+    - course thumbnail image with proper alt text
+  4. A section titled "Course Curriculum":
+    - Use an ordered list
+    - each module should include a short description
+  5. A section titled "Course Details" using a table:
+    - Duration
+    - Level
+    - language
+    - Price
+  6. A section titles "Student Reviews": 
+    - each review must be inside an <article>
+    - Include reviewer name and review text
+  7. A section titled "Enroll now" with a form:
+    - Full name(text)
+    - Email(email)
+    - Learning mode(radio buttons: Online / Offline)
+    - Agree to terms
+    - Submit button
+  8. Use semantic tags correctly:
+    - <header>, <nav>, <main>, <section>, <article>, <footer>
+  9. All labels must be properly associated with inputs
+  10. Clean, valid, accessible HTML only
+  
+Goal: Build a complete, real- world webpage using correct HTMl semantics and structure.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial- scale=1.0">
+       <title>Online Course Platform</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>LearnSphere</h1>
+            <p>Empowering learning through technology</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <header>
+                    <h2>Web Development Fundamentals</h2>
+                    <p>Instructor: <strong>Arpita Anand</strong></p>
+                </header>
+
+                <img src="course.jpg" alt="Web development course banner" width="400">
+
+                <p>
+                    This course introduces the fundamentals of web development, covering HTML, best practiced, and real word project structure.
+                </p>
+
+                <section>
+                    <h3>Course Curriculum</h3>
+                    <ol>
+                        <li>
+                            Introduction to the web
+                            <p>Understanding how the internet and wesbites work.</p>
+                        </li>
+                        <li> 
+                            HTML Basics
+                            <p>Learning structure, tags, and semantic HTML.</p>
+                        </li>
+                        <li>
+                            Forms and Accessibility
+                            <p>Creating user-friendly and accessible forms.</p>
+                        </li>
+                        <li>
+                            Project structure
+                            <p>Organizing files like a professional developer.</p>
+                        </li>
+                    </ol>    
+                </section>
+
+                <section>
+                    <h3>Course Details</h3>
+                    <table border="1">
+                        <tr>
+                            <th scope="row">Duration</th>
+                            <td>6 Weeks</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Level</th>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Language</th>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Price</th>
+                            <td>Rs. 1,999</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>Student Review</h3>
+
+                    <article>
+                        <h4>Riya Sharma</h4>
+                        <p>
+                            This course helped me understand HTMl clearly and confidently.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h4>Aman Verma</h4>
+                        <p>
+                            Well- structured lessons and beginner-friendly explanations.
+                        </p>
+                    </article>
+
+                </section>
+
+            </article>
+
+            <section>
+                <h2>Enroll Now</h2>
+
+                <form>
+                    <label for="enroll-name">Full Name:</label><br>
+                    <input type="text" id="enroll-name" name="enroll-name"><br><br>
+
+                    <label for="enroll-name">Email</label><br>
+                    <input type="email" id="enroll-email" name="enroll-email"><br><br>
+
+                    <fieldset>
+                        <legend>Learning Mode</legend>
+
+                        <label>
+                            <input type="radio" name="mode" value="online">
+                            Online
+                        </label><br>
+
+                        <label>
+                            <input type="radio" name="mode" value="offline">
+                            Offline 
+                        </label><br>
+
+                    </fieldset><br>
+
+                    <label>
+                        <input type="checkbox" name="terms">
+                        I agree to the terms and conditions
+                    </label><br><br>
+
+                    <input type="submit" value="Enroll now">
+
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 LearnSphere. All rights reserved</p>
+        </footer>
+    </body>
+</html>

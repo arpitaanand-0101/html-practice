@@ -1,0 +1,166 @@
+<!-- Problem statement:
+ Create a University Department Overview webpage using only HTML.
+ Requirements:
+ 1. Page title: Computer Science Department
+
+ 2. Website header containing:
+  - Department name as main heading
+  - University name as a subtitle
+
+ 3. Navigation bar with links:
+  - Home
+  - Faculty
+  - Courses
+  - Contact
+
+ 4. Main content should include the following sections:
+  A. About the department
+   - A paragraph decsribing the department's mission and focus areas
+  B. Programs included
+   - An ordered list of degree programs
+  C. Faculty members
+   - Each faculty member must be inside an <article>
+   - Include name, designation, and short description
+  D. Contact the department
+   - A form with proper labels:
+     - Name(text)
+     - Email(email)
+     - Message(textarea)
+     - Submit button
+
+ 5. Use semantic HTMl tags correctly:
+  - <header>, <nav>, <main>, <section>, <article>, <footer>
+
+ 6. All labels must be properly associated with form controls
+
+ 7. Clean, valid, accessible HTML only
+
+ Goal:
+ Practice long- form HTML typing, complex, semantic correctness, and real- world academic website layout.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <title>Deepartment of Computer Science and Engineering</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Computer Science Department</h1>
+            <p>ABC University</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+
+            <section>
+
+                <h2>About the department</h2>
+                <p>
+                    The Department of Computer Science and Engineering at ABC University is dedicated to excellence in teaching, research, and innovation. The department focuses on building strong foundations in computing while encouraging problem - solving, creativity, and ethical use of technology. 
+                </p>
+            </section>
+
+            <section>
+                <h2>Programs offered</h2>
+                <ul>
+                    <li>Bachelor of Technology in Computer Science</li>
+                    <li>Master of Technology in Computer Science</li>
+                    <li>Ph.D. in Computer Science</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Faculty members</h2>
+
+                <article>
+                    <h3>Dr. Ananya Rao</h3>
+                    <p><strong>Designation:</strong>Professor</p>
+                    <p>
+                        Dr. Rao specializes in artificial intelligence and has over 20 years of academic and research experience.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Mr. Rahul Mehta</h3>
+                    <p><strong>Designation:</strong>Associate Professor</p>
+                    <p>
+                        Mr. Mehta focuses on web technologies and software engineering, guiding students through industry- relevant projects.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Ms. Neha Sharma</h3>
+                    <p><strong>Designation:</strong>Assistant Professor</p>
+                    <p>
+                        Ms. Sharma's interests include date science and machine learning, with a strong emphasis on practical applications.
+                    </p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Courses Offered</h2>
+
+                <table border="1">
+                    <tr>
+                        <th scope="col">Course code</th>
+                        <th scope="col">Course name</th>
+                        <th scope="col">Credits</th>
+                    </tr>
+                    <tr>
+                        <td>CS101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>CS205</td>
+                        <td>Database Management System</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS310</td>
+                        <td>Web Development</td>
+                        <td>3</td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <section>
+                <h2>Contact the department</h2>
+
+                <form>
+                    <label for="contact-name">Name:</label><br>
+                    <input type="text" id="contact-name" name="contact-name"><br><br>
+
+                    <label for="contact-email">Email:</label><br>
+                    <input type="email" id="contact-email" name="contact=email"><br><br>
+
+                    <label for="contact-message">Message:</label><br>
+                    <textarea id="contact-message" name="contact-message" rows="5" cols="20"></textarea><br><br>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Computer Science Department, ABC University</p>
+        </footer>
+        
+    </body>
+
+ </html>

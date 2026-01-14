@@ -1,0 +1,229 @@
+<!--
+Problem Statement:
+
+Create a Hospital Patient Services Portal webpage using only HTMl.
+
+Requirements:
+
+1. Page title: CityCare Hospital 
+2. Header section with:
+ - Hospital name as main heading
+ - A short tagline below it
+3. navigation bar woth links:
+ - Home
+ - Departments
+ - Doctors
+ - Appointments
+ - Contact
+4. Main content must include the following sections:
+ A. About CityCare Hospital
+  - Detailed paragraph describing services and values
+ B. Departments
+  - Unordered list of hospital departments
+ C. Doctor's directory
+  - Each doctor inside an <article>
+  - Include name, specialization, and experience
+ D. Patient Services
+  - Ordered list explaining hospital services
+ E. Appointment Booking Form
+  - Full name (text)
+  - Email (email)
+  - Phone number (Tel)
+  - Department (select dropdown)
+  - Preferred Appointment Date (date)
+  - Gender (Radio buttons)
+  - Terms agreement
+  - Submit button
+  - All labels must be properly associated
+ F. Hospital timings
+  - Display using a table
+  
+5. Use semantic HTMl tags correctly:
+ - <header>, <nav>, <main>, <section>, <article>, <footer>, <fieldset>, <legend>
+    
+6. Clean, valid and accessible HTML only
+
+Goal: Practice long HTMl typing, form structure, semantic layout, and professional healthcare website design.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>CityCare Hospital</title>
+    </head>
+
+    <body>
+
+    <header>
+        <h1>CityCare Hospital</h1>
+        <p>Compassion. care. Commitment</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>About CityCare Hospital</h2>
+            <p>
+                CityCare Hospital is a multi-specialty healthcare institution dedicated to providing high-quality medical services wih a patient-centred approach. Our hospital combines advanced technology, experienced professionals, and compassionate care to ensure the well-being pf every patient.
+            </p>
+        </section>
+
+        <section>
+            <h2>Departments</h2>
+
+            <ul>
+                <li>Cardiology</li>
+                <li>Neurology</li>
+                <li>Orthopedics</li>
+                <li>Pediatrics</li>
+                <li>General Medicine</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Doctor's Directory</h2>
+
+            <article>
+                <h3>Dr. Ramesh Kumar</h3>
+                <p><strong>Specialization:</strong>Cardiologist</p>
+                <p>
+                    Dr. Kumar has over 18 years of experience in diagnosing and treat complex heart conditions.
+                </p>
+            </article>
+
+            <article>
+                <h3>Dr. Priya Malhotra</h3>
+                <p><strong>Specialization:</strong>Neurologist</p>
+                <p>
+                    Dr. Malhotra specializes in neurological disorders and advanced brain health treatments.
+                </p>
+            </article>
+
+            <article>
+                <h3>Dr. Aman Verma</h3>
+                <p><strong>Specialization:</strong>Orthopedic Surgeon</p>
+                <p>
+                    Dr. Verma focuses on joint replacement and sports injury management.
+                </p>
+            </article>
+        </section>
+
+        <section>
+
+            <h2>Patient Services</h2>
+            <ol>
+                <li>Emergency And Trauma Care</li>
+                <li>Outpatient Counsultation</li>
+                <li>Inpatient Services</li>
+                <li>Diagnostic and Imaging Services</li>
+                <li>Pharmacy and Laboratory Services</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Book an Appointment</h2>
+
+            <form>
+                <label for="patient-name">Full name:</label><br>
+                <input type="text" id="patient-name" name="patient-name"><br><br>
+
+                <label for="patient-email">Email:</label><br>
+                <input type="email" id="patien-email" name="patient-email"><br><br>
+
+                <label for="patient-phone">Phone Number:</label><br>
+                <input type="tel" id="patient-phone" name="patient-phone"><br><br>
+
+                <label for="department">Department</label>
+                <select id="department" name="department">
+                    <option>Cardiology</option>
+                    <option>Neurology</option>
+                    <option>Orthophedics</option>
+                    <option>Pediatrics</option>
+                    <option>General Medicine</option>
+                </select><br><br>
+
+                <label for="appointment-date">Preferred Appointment Date:</label><br>
+                <input type="date" id="appointment-date" name="appointment-date"><br><br>
+
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+
+                </fieldset><br>
+
+                <label>
+                    <input type="checkbox" name="terms">
+                    I agree to the hospital terms and policies
+                </label><br><br>
+
+                <input type="submit" value="Book Appointment">
+            </form>
+        </section>
+
+        <section>
+            <h2>Opening and General Services Timings</h2>
+
+            <p><strong>Note:</strong>Emergency services are available 24/7</p>
+
+            <table border="1">
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Opening Time</th>
+                    <th scope="col">Closing Time</th>
+                </tr>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>8:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+
+                <tr>
+                    <td>Saturday</td>
+                    <td>9:00 AM</td>
+                    <td>6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td colspan="2">Emergency Services Only (24 Hours)</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CopyCare Hospital. All rights reserved.</p>
+    </footer>
+
+  </body>
+
+</html>

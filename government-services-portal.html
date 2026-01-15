@@ -1,0 +1,271 @@
+<!-- 
+ Problem Statement: Create a Government Services Portal Webpage using only HTML.
+ 
+ Scenario: 
+ This page allows citizens to view information about a government service and submit an application online.
+ 
+ Requirements:  
+ 
+ 1. Page title: National Citizen Services Portal
+ 
+ 2. Header section must include:
+  - Portal anme as main heading
+  - Government tagline below it
+  - Navigation menu with links:
+    * Home
+    * Services
+    * Apply
+    * Status
+    * Contact
+
+ 3. Main content must include the following sections:
+
+  A. Introduction
+    - Detailed paragraph explaining the purpose of the portal
+    
+  B. Available services
+    - Unordered list describing multiple public services
+    
+  C. Eligibility Criteria
+    - Ordered list explaining who can apply
+     
+  D. Required Documents
+    - Description list (<dl>) with document name and purpose
+  
+  E. Services Details:
+    - Table showing:
+        * Service time
+        * Processing time
+        * Fees
+        
+  F. Citizen Application Form
+    - Full name (text)
+    - Email (email) 
+    - Mobile Number(tel) 
+    - Date of Birth (date)
+    - Gender (radio button)
+    - State (select dropdown with at least 5 options)
+    - Services applying for (checkboxes)
+    - Upload Identity Proof (file input)
+    - Declaration checkbox
+    - Submit button
+    - All labels must be properly associated
+
+  G. Important instructions:
+    - Section with multiple paragpraphs of instructions
+
+ 4. Footer section must include:
+  - Government disclaimer text
+  - Copyright notice
+
+ 5. Use semantic HTML tags correctly:
+  - <header>, <nav>, <main>, <section>, <article>, <footer>, <fieldset>, <legend>
+
+ 6. Clean, valid, and accessible HTMl only
+
+GOAL: 
+Practice very long HTML typing, complex forms, real - world government portal structure, and semantic correctness
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>National Citizen Services Portal</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>National Citizen Services Portal</h1>
+            <p>Digital Services for Every Citizen</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Apply</a></li>
+                    <li><a href="#">Status</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    The National Citizen Services Portal is a unified digital platform designed to provide citizens with easy access to essential government services. This portal amins to simplify the application process, improve transparency, and ensure efficient delivery of public services.
+                </p>
+            </section>
+
+            <section>
+                <h2>Available Services</h2>
+                <ul>
+                    <li>Issuance of Government Identity Cards</li>
+                    <li>Public Welfare Scheme Registration</li>
+                    <li>Pension and Social Security Applications</li>
+                    <li>Grievance Redressal Services</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Eligibility Criteria</h2>
+                <ol>
+                    <li>Applicant must be a citizen of the country</li>
+                    <li>Applicant must be 18 years of age or older.</li>
+                    <li>Applicant must possess valid identity proof.</li>
+                    <li>Applicant must provide accurate and verifiable information.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Required Documents</h2>
+                <dl>
+                    <dt>Aadhar Card</dt>
+                    <dd>Used for identity verification.</dd>
+
+                    <dt>Address Proof</dt>
+                    <dd>Used to verify the residential address of the applicant.</dd>
+
+                    <dt>Date of Birth Certificate</dt>
+                    <dd>Used to confirm age eligibility</dd>
+
+                    <dt>Passport Size Photograph</dt>
+                    <dd>used for official records and identification.</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h2>Service Details</h2>
+
+                <table border="1">
+                    <tr>
+                        <th scope="col">Service Name</th>
+                        <th scope="col">Processing Time</th>
+                        <th scope="col">Fees</th>
+                    </tr>
+                    <tr>
+                        <td>Identity Card Issuance</td>
+                        <td>15 working days</td>
+                        <td>Rs. 100</td>
+                    </tr>
+                    <tr>
+                        <td>Income Certificate</td>
+                        <td>10 Working Days</td>
+                        <td>Rs. 50</td>
+                    </tr>
+                    <tr>
+                        <td>Pension Registration</td>
+                        <td>30 Working Days</td>
+                        <td>Free</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Citizen Application Form</h2>
+
+                <form>
+                    <label for="citizen-name">Full Name:</label><br>
+                    <input type="text" id="citizen-name" name="citizen-name"><br><br>
+
+                    <label for="citizen-email">Email:</label><br>
+                    <input type="email" id="citizen-email" name="citizen-email"><br><br>
+
+                    <label for="citizen-phone">Mobile Number:</label><br>
+                    <input type="tel" id="citizen-phone" name="citizen-phone"><br><br>
+
+                    <label for="citizen-dob">Date of Birth:</label><br>
+                    <input type="date" id="citizen-dob" name="citizen-dob"><br><br>
+
+                    <fieldset>
+                        <legend>Gender</legend>
+
+                        <label>
+                            <input type="radio" name="gender" value="male">
+                            Male
+                        </label><br>
+
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </label><br>
+
+                        <label>
+                            <input type="radio" name="gender" value="other">
+                            Other
+                        </label>
+                    </fieldset><br>
+
+                    <label for="state">State:</label><br>
+                    <select id="state" name="state">
+                        <option>Delhi</option>
+                        <option>Maharashtra</option>
+                        <option>Karnataka</option>
+                        <option>Tamil Nadu</option>
+                        <option>West Bengal</option>
+                    </select><br><br>
+
+                    <fieldset>
+                        <legend>Services Applying For</legend>
+
+                        <label>
+                            <input type="checkbox" name="service-id">
+                            Identity Card
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="service-income">
+                            Income Certificate
+                        </label><br>
+
+                        <labek>
+                            <input type="checkbox" name="service-pension">
+                            Pension Registration
+                        </labek>
+                    </fieldset><br>
+
+                    <label for="identity-proof">Upload Identity Proof:</label><br>
+                    <input type="file" id="identity-proof" name="identity-proof"><br><br>
+
+                    <label>
+                        <input type="checkbox" name="declaration">
+                        I declare that the information provided is true and correct.
+                    </label><br><br>
+
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>
+
+            <section>
+                <h2>Important instructions</h2>
+                <p>
+                    Applicants are advised to carefully read all instructions before submitting the application form. Incorrect or incomplete information may lead to rejection or delay in processing.
+                </p>
+                <p>
+                    All uploaded documents must be clear and legible. The government reserves the right to verify the authenticity of the documents submitted byt he applicant.
+                </p>
+                <p>
+                    Application status can be tracked online using the reference numbers generated after submission.
+                </p>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>
+                This is an official government portal. Unauthorized use or misuse of this portal is punishable under applicable laws.
+            </p>
+            <p>&copy; 2026 Government of India</p>
+            
+        </footer>
+
+
+
+    </body>
+</html>
+

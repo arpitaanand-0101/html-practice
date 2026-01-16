@@ -1,0 +1,406 @@
+<!-- 
+Problem Statement: 
+Create an online university learning management system (LMS) student dashboard webpage using only HTML.
+
+Scenario:
+This page represents a logged-in students dashboard where students can view their profile, enrolled courses, announcements, assignments, and submit feedbacks.
+
+Requirements:
+
+1. Page title: University LMS - Student Dashboard
+
+2. Header section must include:
+ - University name as main heading
+ - LMS subtitle below it
+ - Navigation menu with links:
+  * Dashboard
+  * Courses
+  * Assignments
+  * Grades
+  * Profile
+  * Logout
+
+3. Main content must include ALL the following sections"
+
+ A. Student Profile Overview
+  - Student name
+  - Student ID
+  - Degree program
+  - Year of study
+  - Profile image with alt text
+  - Short decriptive paragraph
+
+ B. Announcements
+  - At least 3 announcements
+  - Each announcement inside an <article>
+  - Include title, date, and announcement content paragraph
+
+ C. Enrolled Courses
+  - Display courses using a table with:
+   * Course code
+   * Course name 
+   * Instructor
+   * Credits
+   * Status (Ongoing / Completed)
+
+ D. Weekly Timetable
+  - Timetable displayed using a table
+  - Days as rows, time slots as columns
+
+ E. Assignments Section
+  - Each assignment inside an <article>
+  - Include assignment title, course name, due date, and description
+  - Indicate submission status (Submitted / Pending)
+
+ F. Assignment Submission Form
+  - Course (select dropdown)
+  - Assignment Title (text)
+  - Upload Assignment File (file input)
+  - Additional Comments (textarea)
+  - Declaration checkbox
+  - Submit button
+  - All labels must be properly associated
+
+ G. Academic Progress
+  - Ordered list describing academic milestones
+  - Paragraph explaining grading policy
+
+ H. Student Feedback Form
+  - Course (select dropdown)
+  - Instructor name (text)
+  - Rating (radio buttons: Excellent / Good / Average / Poor)
+  -Feedback Message (textarea)
+  - Submit button
+
+4. Footer section must include:
+ - University contact information
+ - Academic integrity notice 
+ - Copyright notice
+
+5. Use semantic HTML tags correctly:
+ - <header>, <nav>, <main>, <section>, <article>, <footer>, <fieldset>, <legend>
+
+6. Clean, valid, accessible HTML only
+
+GOAL:
+ Push typing endurance to the limit, practice complex academic portals, and reinforce professional semantic structure.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University LMS - Student Dashboard</title>
+    </head>
+
+    <body>
+
+
+        <header>
+
+            <h1>XYZ University</h1>
+            <p>Learning Management System - Students Dashboard</p>
+
+            <nav>
+
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Assignments</a></li>
+                    <li><a href="#">Grades</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Student Profile -->
+
+            <section>
+
+                <h2>Student Profile Overview</h2>
+
+                <img src="student-profile.jpg" alt="student profile" width="150">
+
+                <p><strong>Name:</strong> Arpita Anand</p>
+                <p><strong>Student ID:</strong>CS20231234</p>
+                <p><strong>Program:</strong>B.Tech Computer Science</p>
+                <p><strong>Year of Study:</strong>Second Year</p>
+
+                <p>
+                    Welcome to your LMS dashboard. This portal allows you to manage your academic activities, track assignments, view announcements, and stay updated with university communications.
+                </p>
+
+            </section>
+
+            <!-- Announcements -->
+
+            <section>
+                <h2>Announcements</h2>
+
+                <article>
+
+                    <h3>Mid-Semester Examination Schedule</h3>
+                    <p><strong>Date:</strong> 15th March 2026</p>
+                    <p>
+                        The mid-semester examinations will commence from 25 March 2026.
+                        Students are advised to check the exam timetable and prapare accordingly.
+                    </p>
+                </article>
+
+                <article>
+
+                    <h3>Library Maintenance Notice</h3>
+                    <p><strong>Date:</strong> 10th March 2026</p>
+                    <p>
+                        The Central Library will remain closed for maintenance on 18th March 2026.
+                        Online resoursec will remain accessible.
+                    </p>
+                </article>
+
+                <article>
+
+                    <h3>Workshop on Web Development</h3>
+                    <p><strong>Date:</strong>05 March 2026</p>
+                    <p>
+                        A hands-on workshop on modern web development practices will be conducted next week. Interested students can register via the university portal.
+                    </p>
+                </article>
+            </section>
+
+            <!-- Enrolled Counrses -->
+             <section>
+
+                <h2>Enrolled Courses</h2>
+
+                <table border="1">
+                    <tr>
+                        <th scope="col">Course Code</th>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Instructor</th>
+                        <th scope="col">Credits</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                    <tr>
+                        <td>CS201</td>
+                        <td>Data Structures</td>
+                        <td>Dr. Ananya Rao</td>
+                        <td>4</td>
+                        <td>Ongoing</td>
+                    </tr>
+                    <tr>
+                        <td>CS205</td>
+                        <td>Database Management Systems</td>
+                        <td>Mr. Rahul Mehta</td>
+                        <td>3</td>
+                        <td>Ongoing</td>
+                    </tr>
+                    <tr>
+                        <td>CS210</td>
+                        <td>Operating Systems</td>
+                        <td>Ms. Neha Sharma</td>
+                        <td>3</td>
+                        <td>Completed</td>
+                    </tr>
+
+                </table>
+             </section>
+
+             <!-- Weekly Timetable -->
+              <section>
+
+                <h2>Weekly Timetable</h2>
+
+                <table border="1">
+                    <tr>
+                        <th>Day</th>
+                        <th>9-10 AM</th>
+                        <th>10-11 AM</th>
+                        <th>11-12 AM</th>
+                        <th>1-2 PM</th>
+                    </tr>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>DS</td>
+                        <td>DBMS</td>
+                        <td>OS</td>
+                        <td>Lab</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>DBMS</td>
+                        <td>DS</td>
+                        <td>Tutorial</td>
+                        <td>Lab</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>OS</td>
+                        <td>DS</td>
+                        <td>DBMS</td>
+                        <td>Free</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Lab</td>
+                        <td>OS</td>
+                        <td>DS</td>
+                        <td>DBMS</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>DBMS</td>
+                        <td>Lab</td>
+                        <td>OS</td>
+                        <td>Free</td>
+                    </tr>
+                </table>
+              </section>
+
+              <!-- Assignments -->
+               <section>
+
+                <h2>Assignments</h2>
+
+                <article>
+
+                    <h3>Assignment  1 - Data Structures</h3>
+                    <p><strong>Due Date:</strong> 22nd March 2026</p>
+                    <p><strong>Status:</strong> Submitted</p>
+                    <p>
+                        Implemented stack and queue operation using arrays and linked lists.
+                    </p>
+                </article>
+
+                <article>
+
+                    <h3>Assignment 2 - DBMS </h3>
+                    <p><strong>Due Date:</strong> 28th March 2026</p>
+                    <p><strong>Status:</strong> Pending</p>
+                    <p>
+                        Design a relational database schema for a library management system.
+                    </p>
+                </article>
+               </section>
+
+               <!-- Assignment Submission Form -->
+               <section>
+
+                <h2>Submit Assignment</h2>
+
+                <form>
+
+                    <label for="course">Course:</label><br>
+                    <select id="course" name="course">
+                        <option>Data Structures</option>
+                        <option>DBMS</option>
+                        <option>Operating Systems</option>
+                    </select><br><br>
+
+                    <label for="assignment-title">Assignment Title:</label><br>
+                    <input type="text" id="assignment-title" name="assignment-title"><br><br>
+
+                    <label for="assignment-file">Upload Assignment:</label><br>
+                    <input type="file" id="assignment-file" name="assignment-file"><br><br>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea type="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                    <label>
+                        <input type="checkbox" name="declaration">
+                        I confirm that this submission is my own work.
+                    </label><br><br>
+
+                </form>
+
+                </section>
+
+                <!-- Academic Progress -->
+
+                <section>
+
+                    <h2>Academic Progress</h2>
+
+                    <ol>
+                        <li>Completion of core foundation courses</li>
+                        <li>Successful submission of semester projects</li>
+                        <li>Participation in workshops and seminars</li>
+                        <li>Countinuous assessment and examinations</li>
+                    </ol>
+
+                    <p>
+                        Grades are awarded based on internal assessments, assignments, examinations, and class participation. Academic integrity is strictly enforced.
+                    </p>
+                </section>
+
+                <!-- Feedback Form -->
+
+                <section>
+
+                    <h2>Student Feedback</h2>
+
+                    <form>
+
+                        <label for="feedback-course">Course:</label><br>
+                        <select id="feedback-course" name="feedback-course">
+                            <option>Data Structures</option>
+                            <option>DBMS</option>
+                            <option>Operating Systems</option>
+                        </select><br><br>
+
+                        <label for="instructor">Instructor Name: </label><br>
+                        <input type="text" id="instructor" name="instructor"><br><br>
+
+                        <fieldset>
+                            <legend>Rating</legend>
+
+                            <label>
+                                <input type="radio" name="rating" value="excellent">
+                                Excellent
+                            </label><br>
+
+                            <label>
+                                <input type="radio" name="rating" value="good">
+                                Good 
+                            </label><br>
+
+                            <label>
+                                <input type="radio" name="rating" value="average">
+                                Average 
+                            </label><br>
+
+                            <label>
+                                <input type="radio" name="rating" value="poor">
+                                Poor
+                            </label>
+                        </fieldset><br>
+
+                        <label for="feedback-message">Feedback:</label><br>
+                        <textarea id="feedback-message" name="feedback-message" rows="4" cols="50"></textarea><br><br>
+
+                        <input type="submit" value="Submit Feedback">
+
+                    </form>
+
+                </section>
+
+        </main>
+
+        <footer>
+            <p>Contact: lms@xyzuniversity.edu | Phone: +91 98765 43210</p>
+            <p>Academic Integrity Policy: Any form of miscounduct will be penalized</p>
+            <p>&copy; 2026 XYZ University</p>
+        </footer>
+
+    </body>
+    
+</html>

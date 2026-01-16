@@ -1,0 +1,344 @@
+<!-- 
+ Problem statement:
+ Create a large E-Commerce webpage using only HTML.
+ 
+ Scenario: This page represents a complete product view along with seller information, customer reviews, and a user account form.
+ 
+ Requirements:
+ 
+ 1. Page title: ShopEase Online Marketplace
+ 
+ 2. Header section must include:
+  - Marketplace name
+  - Short tagline
+  - Navigation menu with links:
+   * Home
+   * Categories
+   * Deals
+   * Cart
+   * Account
+   
+ 3. Main content must include ALl of the following sections:
+ 
+  A. Product Overview
+    - Product name
+    - Brand name
+    - Long product description (at least 2 paragraphs)
+    - product image with alt text
+    
+  B. Product Specifications
+    - Table with at least 6 rows
+     * Feature
+     * Description
+
+  C. Pricing and availability
+    - Price
+    - Discount information
+    - Stock availability
+    - Delivery information paragraph
+
+  D. Seller information
+    - Seller name
+    - Seller rating
+    - Seller description paragraph
+
+  E. Customer Reviews
+    - At least $ reviews
+    - Each reviews inside an <article>
+    - Include reviewer name, rating text, and review paragraph
+    
+  F. Related Products
+     - Unordered list of product names
+
+  G. User Account Section:
+    - Login Form:
+      * Email
+      * Password
+    - Registration Form
+      * Full Name
+      * Email
+      * Password
+      * Confirm Password
+      * Phone Number
+      * Agreement checkbox
+    - All labels must be properly associated
+    
+  H. Delivery & Return Policy
+    - Multiple paragraphs explaining delivery, replacement, and return terms
+
+ 4. Footer must include:
+  - Customer support text
+  - Company copyright
+
+ 5. Use semantic HTML tags correctly:
+  - <header>, <nav>, <main>, <section>, <article>, <fieldset>, <legend>
+
+ 6. Clean, valid, accessible HTML only
+
+GOAL: Push typing endurance, structural accuracy, and real- world commercial page complexity.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ShopEase Online Marketplace</title>
+
+    </head>
+    
+    <body>
+
+        <header>
+
+            <h1>ShopEase</h1>
+            <p>Your one-stop destination for smart shopping</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Product Overview -->
+             <section>
+                <h2>Product Overview</h2>
+
+                <article>
+                    <h3>Wireless Noise Cancelling Headphones</h3>
+                    <p><strong>Brand:</strong> SoundMax</p>
+
+                    <img src="headphones.jpg" alt="Wireless noise cancelling headphones" width="300">
+
+                    <p>
+                        Experience immersive sound quality with SoundMax wireless noise cancelling headphones. Designed for comfort and superior audio performance, these headphones are perfect for music lovers, professionals and travellers.
+                    </p>
+
+                    <p>
+                        Featuring advanced noise cancellation technology, long battery life, and ergonomic ear cushions, this headphones ensure uninterrupted listening even in noisy environments.
+                    </p>
+                </article>
+             </section>
+
+             <!-- Product Specifications -->
+
+             <section>
+                <h2>Product Specifications</h2>
+
+                <table border="1">
+                    <tr>
+                        <th scope="col">Feature</th>
+                        <th scope="col">Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>Battery Life</td>
+                        <td>Up to 30 Hours</td>
+                    </tr>
+
+                    <tr>
+                        <td>Connectivity</td>
+                        <td>Bluetooth 5.2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Noise Cancellation</td>
+                        <td>Active Noise Cancellation</td>
+                    </tr>
+
+                    <tr>
+                        <td>Charging Time</td>
+                        <td>2 Hours</td>
+                    </tr>
+
+                    <tr>
+                        <td>Warranty</td>
+                        <td>1 Year Manufacturing Warranty</td>
+                    </tr>
+
+                </table>
+
+             </section>
+
+             <section>
+
+                <!-- Pricing -->
+
+                <h2>Pricing and Availability</h2>
+
+                <p><strong>Price:</strong> Rs. 5,999</p>
+                <p><strong>Discount:</strong> 20% off (LIMITED TIME OFFER) </p>
+                <p><strong>Availability:</strong> In Stock</p>
+
+                <p>
+                    Free delivery available withing 3 - 5 business days. Cash on delivery and easy EMI options are supported.
+                </p>
+
+             </section>
+
+             <section>
+
+                <!-- Seller Information -->
+
+                <h2>Seller Information</h2>
+
+                <p><strong>Seller:</strong> SoundMax Official Store</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐ (4.5 out of 5) </p>
+
+                <p>
+                    SoundMax is a trusted electronics brand known for delivering high- qualitu audio products. The official store ensures genuine products and reliable customer support.
+                </p>
+             </section>
+
+             <!-- Customer Service -->
+              <section>
+
+                <h2>Customer Reviews</h2>
+
+                <article>
+                    <h3>Rohan Mehta</h3>
+                    <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ </p>
+                    <p>
+                        Amazing sound quality and excellent noise cancellation. Totally worth the price.
+                    </p>
+                </article>
+
+                <article>
+
+                    <h3>Anjali Sharma</h3>
+                    <p><strong>Rating:</strong> ⭐⭐⭐⭐ </p>
+                    <p>
+                        Comfortable to wear for long hours. Battery life is impressive.
+                    </p>
+                </article>
+
+                <article>
+
+                    <h3>Vikram Singh</h3>
+                    <p><strong>Vikram Singh</strong> ⭐⭐⭐⭐</p>
+                    <p>
+                        Build quality is good. Noise cancellation works well in public places.
+                    </p>
+                </article>
+
+                <article>
+
+                    <h3>Neha Kapoor</h3>
+                    <p><strong>Ratings:</strong> ⭐⭐⭐⭐</p>
+                    <p>
+                        Perfect for online meetings and music. Highly recommended.
+                    </p>
+                </article>
+              </section>
+
+              <!-- Related Products -->
+               <section>
+
+                <h2>Related Products</h2>
+
+                <ul>
+                    <li>Bluetooth Earbuds</li>
+                    <li>Over-Ear Wired Headphones</li>
+                    <li>Portable Bluetooth Speakers</li>
+                    <li>Noise Cancelling Earphones</li>
+                </ul>
+               </section>
+
+               <!-- User Account Section -->
+
+               <section>
+
+                <h2>User Account</h2>
+
+                <article>
+
+                    <h3>Login</h3>
+
+                    <form>
+
+                        <label for="login-email">Email:</label><br>
+                        <input type="email" id="login-email" name="login-email"><br><br>
+
+                        <label for="login-password">Password:</label><br>
+                        <input type="password" id="login-password" name="login-password"><br><br>
+
+                        <input type="submit" value="Login">
+
+                    </form>
+
+                </article>
+
+                <article>
+
+                <h3>Register</h3>
+                <form>
+
+                    <label for="reg-name">Full Name:</label><br>
+                    <input type="text" id="reg-name" name="reg-name"><br><br>
+
+                    <label for="reg-email">Email:</label><br>
+                    <input type="email" id="reg-email" name="reg-email"><br><br>
+
+                    <label for="reg-password">Password:</label><br>
+                    <input type="password" id="reg-password" name="reg-password"><br><br>
+
+                    <label for="reg-confirm">Confirm Password:</label><br>
+                    <input type="password" id="reg-confirm" name="reg-confirm"><br><br>
+
+                    <label for="reg-phone">Phone Number:</label><br>
+                    <input type="tel" id="reg-phone" name="reg-phone"><br><br>
+
+                    <label>
+                        <input type="checkbox" name="agreement">
+                        I agree to the terms and conditions
+                    </label><br><br>
+
+                    <input type="submit" value="Create Account">
+
+                </form>
+                
+               </article>
+
+               </section>
+
+               <!-- Policies -->
+
+               <section>
+
+                <h2>Delivery & Return Policy</h2>
+
+                <p>
+                    Orders are shipped withing 24 hours of confirmation. Delivery timelines may vary based on location and courier availability.
+                </p>
+
+                <p>
+                    Customers can request a replacement within 7 days of delivery iof the product is defective or damaged.
+                </p>
+
+                <p>
+                    Returns are accepted withing 10 days provided the product is unused and in original packing.
+                </p>
+               </section>
+
+        </main>
+
+        <footer>
+            <p>
+                For customer support. contact us at support@shopease.com or call 1800-123-456.
+            </p>
+            <p>&copy; 2026 ShopEase Online Marketplace</p>
+        </footer>
+
+    </body>
+
+</html>

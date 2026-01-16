@@ -1,0 +1,294 @@
+<!-- 
+ Problem Statement:
+ Create a Corporate Careers & Job Application webpage using only HTMl.
+
+ Scenario: This page alows job seekers to learn about the company, view open positions, and apply for a job online. 
+
+ requirements:
+
+ 1. Page title: Careers at TechNova
+
+ 2. Header section must include:
+  - Company name as main heading
+  - Company tagline below it
+  - navigation menu with links
+    * Home
+    * About us
+    * Careers
+    * Life at TechNova
+    * Contact
+ 
+ 3. Main content must include the following sections:
+ 
+  A. About TechNova
+    - Detailed paragraph describing copmany mission, culture, and values
+
+  B. Why work with us
+    - unordered list of company benefits
+
+  C. Open positions
+    - Each job opening inside an <article>
+    - Include job title, location, experience level, and short description
+
+  D. Application Process
+    - Ordered list explaining steps to apply
+
+  E. Job Application Form
+    - Full Name(text)
+    - Email(email)
+    - Phone number(tel)
+    - Position Applying For (select dropdown)
+    - Years of experience (number)
+    - Preferred location (radio button)
+    - Skills (checkboxes) 
+    -  Upload Resume (file input)
+    - Cover letter (textarea)
+    - Agreement checkbox
+    - Submit button
+    - All labels must be properly associated
+
+   F. Frequently  asked questions
+     - Each FAQ inside an <article>
+     - Include question as heading and asnwer as paragraph
+     
+ 4. Footer section must include:
+  - Company legal disclaimer
+  - Copyright notice
+
+ 5. Use semantic HTML tags correctly:
+  - <header>, <nav>, <main>, <section>, <article>, <footer>, <fieldset>, <legend>
+
+ 6. Clean, valid, accessible HTML only
+
+ GOAL:
+ Practice extremely long HTML typing, professional website structure, job application forms, and semantic correctness.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at TechNova</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>TechNova</h1>
+      <p>Innovating the Future, Together</p>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Life at TechNova</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section>
+
+        <h2>About TechNova</h2>
+        <p>
+          TechNova is a global technology company focused on building innovative, scalable, and sustainable digital solutions. Our mission is to empower businesses and individuals through cutting-edge technology, collaborative culture, and continuous learning.
+        </p>
+      </section>
+
+      <section>
+
+        <h2>Why Work With Us</h2>
+        
+        <ul>
+          <li>Inclusive and diverse work environment</li>
+          <li>Opportunities for professional growth</li>
+          <li>Flexible work schedules</li>
+          <li>Competitive compensation and benefits</li>
+          <li>Access to learning and development programs</li>
+        </ul>
+      </section>
+
+      <section>
+
+        <h2>Open Positions</h2>
+
+        <article>
+
+          <h3>Frontend Developer</h3>
+
+          <p><strong>Location:</strong>Bengaluru</p>
+          <p><strong>Experience:</strong>1 - 3 Years</p>
+          <p>
+            We are looking for a frontend developer with strong fundamentals in HTML, CSS, and JavaScript to build responsive user interfaces.
+          </p>
+        </article>
+
+        <article>
+
+          <h3>Backend Developer</h3>
+
+          <p><strong>Location:</strong>Hyderabad</p>
+          <p><strong>Experience:</strong>2 - 5 Years</p>
+          <p>
+            The backend developer will be responsible for building APIs, managing databases, and ensuring system reliability.
+          </p>
+        </article>
+
+        <article>
+
+          <h3>Data Analyst</h3>
+
+          <p><strong>Location:</strong>Remote</p>
+          <p><strong>Experience:</strong>0 - 2 years</p>
+          <p>
+            This role involves analyzing datasets, generating insights, and supporting data- driven decision making.
+          </p>
+        </article>
+
+      </section>
+
+      <section>
+
+        <h2>Application Process</h2>
+
+        <ol>
+          <li>Submit your application through the online form.</li>
+          <li>Shortlisted candidtaes will be contacted for an interview.</li>
+          <li>Technical and HR interviews will be conducted.</li>
+          <li>Final selection and offer letter issuance.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Job Application Form</h2>
+
+        <form>
+          <label for="applicant-name">Full name:</label><br>
+          <input type="text" id="applicant-name" name="applicant-name"><br><br>
+
+          <label for="applicant-email">Email:</label><br>
+          <input type="email" id="applicant-email" name="applicant-email"><br><br>
+
+          <label for="application-phone">Phone Number:</label><br>
+          <input type="tel" id="applicant-phone" name="applicant-phone"><br><br>
+
+          <label for="position">Position APplying for:</label>
+          <select id="position" name="position">
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Data Analyst</option>
+          </select><br><br>
+
+          <label for="experience">Years of Experience:</label><br>
+          <input type="number" id="experience" name="experience" min="0"><br><br>
+
+          <fieldset>
+            <legend>Preferred Location</legend>
+
+            <label>
+              <input type="radio" name="location" value="Bengaluru">
+              Bengaluru
+            </label><br>
+
+            <label>
+              <input type="radio" name="location" value="hyderabad">
+              Hyderabad
+            </label><br>
+
+            <label>
+              <input type="radio" name="location" value="remote">
+              Remote
+            </label>
+
+            
+          </fieldset><br>
+
+          <fieldset>
+
+            <legend>Skills</legend>
+
+            <label>
+              <input type="checkbox" name="skill-html">
+              HTML
+            </label><br>
+
+            <label>
+              <input type="checkbox" name="skill-css">
+              CSS
+            </label><br>
+
+            <label>
+              <input type="checkbox" name="skill-js">
+              JavaScript
+            </label><br>
+
+            <label>
+              <input type="checkbox" name="skill-sql">
+              SQL
+            </label><br>
+
+          </fieldset><br>
+
+          <label for="resume">Upload Resume:</label><br>
+          <input type="file" id="resume" name="resume"><br><br>
+
+          <label for="cover-letter">Cover Letter:</label><br>
+          <textarea type="cover-letter" name="cover-letter" rows="5" cols="50"></textarea>
+
+          <label>
+            <input type="checkbox" name="agreement">
+            I agree to the terms and conditions
+          </label><br><br>
+
+          <input type="submit" value="Apply Now">
+
+        </form>
+
+      </section>
+
+      <section>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <article>
+          <h3>Do you offer remote work></h3>
+          <p>
+            Yes, selected roles are available as remote positions depending on the project requirments.
+          </p>
+        </article>
+
+        <article>
+
+          <h3>Is prior experience mandatory></h3>
+          <p>
+            We value skills and learning ability. Some roles are open to fresh graduates as well.
+          </p>
+        </article>
+
+        <article>
+          <h3>How long does the hiring process take?</h3>
+          <p>
+            The complete hiring process typically takes 2 - 4  weeks.
+          </p>
+        </article>
+
+      </section>
+
+
+    </main>
+
+    <footer>
+      <p>
+        All information provided on this page is for recruitment purposes only. TechNova reserves the right to modify job requirements at any time.
+      </p>
+      <p>&copy; 2026 TechNova. All rights reserved</p>
+    </footer>
+
+
+  </body>
+
+</html>

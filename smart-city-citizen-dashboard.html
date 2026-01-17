@@ -1,0 +1,396 @@
+<!-- 
+ Problem Statement:
+ Create a Smart City Public Services Portal webpage using only HTML.
+ 
+ Scenaio:
+ This webpage represents a citizen dashboard where residents can access city services, view announcememnts, submit service requests, pay utility bills, and provide feedback.
+ 
+ Requirements:
+
+ 1. Page title: Smart City Portal - Citizen Dashboard
+
+ 2. Header section must include:
+  - City name as main heading
+  - Portal subtitle
+  - Navigation menu with links
+    * Dashboard
+    * Services
+    * Bills and Payments
+    * Requests
+    * Announcements
+    * Feedback
+    * Logout
+
+ 3. Main content must include ALL the following sections:
+
+   A. Citizen Profile Overview
+     - Full name
+     - Citizen ID
+     - Residential address (multi-line paragraph)
+     - Registered mobile number
+     - Registered email address
+     - Profile image with proper alt text
+     -Short welcome paragraph explaining the portal purpose
+
+   B. City Announcements
+     - Minimum 4 announcememts
+     - Each announcement inside an <article>
+     - Include announcement title, date, and detailed paragraph.
+     - At least one announcement should be long (4 - 5 lines)
+
+   C. Available Public Services
+     - Unordered list of services such as:
+       * Water supply
+       * Electricity
+       * Waste management
+       * Road maintenance
+       * Public transport
+       * Health & emergency services
+
+   D. Utility Bils Summary
+     - Table displaying:
+       * Bill type
+       * Billing period
+       * Amount due
+       * Due date
+       * Payment status
+
+   E. Pay Utility Bill Form
+     - Bill type (select dropdown)
+     - Consumer number (text input)
+     - Amount (number input)
+     - Payment method (radio buttons)
+     - Declaration checkbox 
+     - Pay now submit button
+     - All labels must be correctly associated
+
+   F. Service Request Submission
+     - Request Type (select dropdown)
+     - Location / area (text input)
+     - Detailed Issue Description (textarea)
+     - Urgency Level (radio buttons)
+     - Attach Supporting Document (file input)
+     - Submit request button
+
+   G. Active Service Requests
+     - Display at least 3 requests
+     - Each request inside an <article>
+     - Include request ID, type, submission date, and current status
+     - Long descriptive text for at least one request
+
+   H. Citizen Feedback Section
+     - Feedback category (select)
+     - Rating (radio buttons: Excellent / Good / Average / Poor)
+     - Feedback message (textarea)
+     - Submit feedback button
+
+   I. Important City Guidelines
+     - Ordered list of rules and advisories
+     - Long paragraph explaining citizen responsibilities
+
+ 4. Footer section must include:
+  - City helpdesk contact details
+  - Emergency contact numbers
+  - Legal disclaimer text
+  - Copyright notice
+
+ 5. Mandatory Semantic HTML Usage:
+  - <header>, <nav>, <main>, <section>, <article>, <footer>, <fieldset>, <legend>
+
+ 6. Use only clean, valid, accessible HTML
+
+ GOAL:
+
+ Build an extremely detailed, realistic government portal layout, improve typing stamina, and master large- scale HTML structure.
+ 
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Smart City Portal - Citizen Dashboard</title>
+        </head>
+
+        <body>
+
+            <header>
+
+                <h1>NeoSmart City</h1>
+
+                <p>Integrated Public Services Portal - Citizen Dashboard</p>
+
+                <nav>
+
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Bills & Payments</a></li>
+                        <li><a href="#">Requests</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+
+                </nav>
+
+            </header>
+
+            <main>
+
+                <!-- Citizen Profile -->
+
+                <section>
+
+                    <h2>Citizen Profile Overview</h2>
+
+                    <img src="citizen-profile.jpg" alt="Citizen Profile" width="150">
+
+                    <p><strong>Full Name:</strong> Arpita Anand</p>
+                    <p><strong>Citizen ID:</strong> SC - 4589231</p>
+
+                    <p><strong>Residential Address:</strong><br>
+                        Welcome to the Smart City Public Services Portal. This platform allows citizens to seamlessly access essential services, manage utility bills, raise service requests, and stay informed about important city updates.
+                    </p>
+                    
+                </section>
+
+                <!-- Announcements -->
+                 <section>
+
+                    <h2>City Announcements</h2>
+
+                    <article>
+
+                        <h3>Water Supply Maintenance</h3>
+                        <p><strong>Date:</strong> 12 April 2026</p>
+                        <p>
+                            Water supply will be temporarily unavailable in Sector 8 and Sector 9 due to schedules pipeline maintenance. Residents are advised to store adequate water in advance.
+                        </p>
+
+                    </article>
+
+                    <article>
+
+                        <h3>Electricity Tariff Revision</h3>
+                        <p><strong>Date:</strong> 08 April 2026</p>
+                        <p>
+                            Revised electricity tariffs will come into effect from 1 May 2026. 
+                            Detailed tariff charts are available under the Bills and Payments section.
+                        </p>
+
+                    </article>
+
+                    <article>
+
+                        <h3>Public Transport Route Expansion</h3>
+                        <p><strong>Date:</strong> 05 April 2026</p>
+                        <p>
+                            New electric bus routed have been introduced to improve connectivity between residential zones and commercial districts.
+                        </p>
+
+                    </article>
+
+                    <article>
+
+                        <h3>Citywide Cleanliness Drive</h3>
+                        <p><strong>Date:</strong> 01 April 2026</p>
+                        <p>
+                            As part of the Smart City initiative, a citywide cleanliness drive will be conducted throughtout the month. Citizens are encouraged to cooperate with waste management teams and follow segregation guidelines strictly to ensure a cleaner and healthier urban environment for everyone.
+                        </p>
+
+                    </article>
+
+                 </section>
+
+                 <!-- Public Services -->
+                  <section>
+                    <h2>Available Public Serices</h2>
+
+                    <ul>
+                        <li>Water Supply Services</li>
+                        <li>Electricity Distribution</li>
+                        <li>Waste Management & Sanitation</li>
+                        <li>Road Maintenance & Infrastructure</li>
+                        <li>Public Transport Services</li>
+                        <li>Health & Emergency Services</li>
+                    </ul>
+
+                  </section>
+
+                  <!-- Utility Bills -->
+                   <section>
+
+                    <h2>Utility Bills Summary</h2>
+
+                    <table border="1">
+
+                        <tr>
+                            <th>Bill Type</th>
+                            <th>Billing Period</th>
+                            <th>Amount Date</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tr>
+                            <td>Electricity</td>
+                            <td>March 2026</td>
+                            <td>Rs. 1,250</td>
+                            <td>20 April 2026</td>
+                            <td>Unpaid</td>
+                        </tr>
+
+                        <tr>
+                            <td>Water</td>
+                            <td>March 2026</td>
+                            <td>Rs. 420</td>
+                            <td>18 April 2026</td>
+                            <td>Paid</td>
+                        </tr>
+
+                        <tr>Preopert Tax</tr>
+                        <td>2025-26</td>
+                        <td>Rs. 5,600</td>
+                        <td>30 April 2026</td>
+                        <td>Unpaid</td>
+
+                    </table>
+
+                   </section>
+
+                   <!-- Pay Bill Form -->
+                    <section>
+                        <h2>Pay Utility Bill</h2>
+
+                        <form>
+
+                            <label for="bill-type">Bill Type:</label><br>
+                            <select id="bill-type" name="bill-type">
+                                <option>Electricity</option>
+                                <option>Water</option>
+                                <option>Property Tax</option>
+                            </select><br><br>
+
+                            <label for="consumer-number">Amount:</label><br>
+                            <input type="text" id="consumer-number" name="consumer-number"><br><br>
+
+                            <label for="amount">Amount:</label><br>
+                            <input type="number" id="amount" name="amount"><br><br>
+
+                            <fieldset>
+                                <legend>Payment Method</legend>
+                                <label><input type="radio" name="payment"> Credit/Debit Card</label><br>
+                                <label><input type="radio" name="payment"> UPI</label><br>
+                                <label><input type="radio" name="payment"> Net Banking</label>
+                            </fieldset><br>
+
+                            <label>
+                                <input type="checkbox">
+                                I confirm that the above details are correct.
+                            </label><br><br>
+
+                            <input type="submit" value="Pay Now">
+                        </form>
+                    </section>
+
+                    <!-- Service Requests -->
+                     <section>
+                        
+                        <h2>Active Service Requests</h2>
+
+                        <article>
+
+                            <h3>Request ID: SR-10231</h3>
+                            <p><strong>Type:</strong> Road Repair</p>
+                            <p><strong>Date:</strong> 02 April 2026</p>
+                            <p><strong>Status:</strong> In progress</p>
+                            <p>
+                                A large pothole near Lake View Road has been reported, causing traffic congestion and safety concerns for commuters and pedestrians.
+                            </p>
+                        </article>
+
+                        <article>
+
+                            <h3>Request ID: SR-10224</h3>
+                            <p><strong>Type:</strong> Garbage Collection</p>
+                            <p><strong>Date:</strong> 06 April 2026</p>
+                            <p><strong>Status:</strong> Resolved</p>
+                            <p>
+                                Irregular garbage collection issue resolved successfull.
+                            </p>
+                        </article>
+
+                        <article>
+
+                            <h3>Request ID: SR-10258</h3>
+                            <p><strong>Type:</strong> Streetlight Repair</p>
+                            <p><strong>Date:</strong> 09 April 2026</p>
+                            <p><strong>Status:</strong> Pending</p>
+                            <p>
+                                Streetlight not functioning near apartment entrance.
+                            </p>
+                        </article>
+                     </section>
+
+                     <!-- Feedback -->
+
+                     <section>
+
+                        <h2>Citizen Feedback</h2>
+
+                        <form>
+                            <label for="feedback-category">Category:</label><br>
+                            <select id="feedback-category">
+                                <option>Public Transport</option>
+                                <option>Water Supply</option>
+                                <option>Electricity</option>
+                                <option>Waste Management</option>
+                            </select><br><br>
+
+                            <fieldset>
+                                <legend>Rating</legend>
+                                <label><input type="radio" name="rating"> Excellent</label><br>
+                                <label><input type="radio" name="rating">Good</label><br>
+                                <label><input type="radio" name="radio">Average</label><br>
+                                <label><input type="radio" name="radio">Poor</label>
+                            </fieldset><br>
+
+                            <label for="feedback-text">Feedback:</label><br>
+                            <textarea id="feedback-text" rows="4" cols="50"></textarea><br><br>
+
+                            <input type="submit" value="Submit Feedback">
+
+                        </form>
+                     </section>
+
+                     <!-- Guidelines -->
+                      <section>
+
+                        <h2>Important City Guidelines</h2>
+
+                        <ol>
+                            <li>Follow waste segregation rules strictly.</li>
+                            <li>Pay utility bills before due dates.</li>
+                            <li>Report civic issues responsibly.</li>
+                            <li>Use emergency services only when required.</li>
+                        </ol>
+
+                        <p>
+                            Citizens are expected to cooperate with city authorities to ensure smooth functioning of public services. Responsible usage of resources and timely reporting of issues contribute to a safer and more efficient city.
+                        </p>
+                      </section>
+
+            </main>
+
+            <footer>
+                <p>City Helpdesk: helpdesk@neosmartcity.gov | Phone: 1800-123-456</p>
+                <p>Emergency: Police 100 | Fire 101 | Ambulance 108</p>
+                <p>This portal is governed by municipal regulations and data protection laws</p>
+                <p>&copy; 2026 NeoSmart City Administration</p>
+            </footer>
+
+        </body>
+ </html>
+

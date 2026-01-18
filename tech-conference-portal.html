@@ -1,0 +1,389 @@
+<!-- 
+ Problem Statement:
+ Create a Global Tech Conference 2026 - Attendee & Speaker Portal
+ 
+ Scenario:
+ This webpage represents an official conference portal where attendees and speakers can view event details, schedules, speakers, register for sessions, and provide feedback.
+ 
+ Requirements:
+ 
+ 1. Page title: Global Tech Conference 2026 - Official Portal
+ 
+ 2. Header section must include:
+  - Conference name as main heading
+  - Conference tagline
+  - Navigation menu with links:
+    * Home
+    * About Conference
+    * Schedule
+    * Speakers
+    * Sessions
+    * Registration
+    *Contact
+
+ 3. Main content must include ALL the following sections:
+
+  A. Conference Overview
+    - Conference description (minimum 2 long paragraphgs)
+    - Event dates
+    - Venue details (address-style formatting)
+    - Official conference banner image with alt text
+
+  B. Keynote Speakers
+    - Minimum 4 speakers
+    - Each speakers inside an <article>
+    - Include:
+      * Speaker name
+      * Designation
+      * Organization
+      * Short bio paragraph
+      * Session topic
+
+  C. Event Schedule
+    - Table with:
+      * Date
+      * Time Slot
+      * Session title
+      * Speaker
+      * Hall / Track
+
+  D. Technical Sessions
+    - Unordered list of session titles
+    - Each list item followed by a descriptive paragraph
+
+  E. Attendee Reqgistration Form
+    - Full Name
+    - Email Address
+    - Organization
+    - Role (Student / Professional / Researcher)
+    - Days attending (checkboxes)
+    - Dietary preference (select dropdown)
+    - Submit button
+    - All labels must be properly associated
+
+  F. Speaker Registration Form
+    - Full Name
+    - Email Address
+    - Organization
+    - Session Title
+    - Session Abstract (textarea)
+    - Availability confirmation checkbox
+    - Submit button
+
+  G. Conference Guidelines & Policies
+    - Ordered list of rules
+    - Long paragraph explaining code of conduct, intellectual property policy, and inclusivity standards
+
+  H. Contact & Support 
+    - Contact email
+    - Support phone number
+    - Office hours paragraph
+
+ 4. Footer section must include:
+  - Organizer information
+  - Sponsorship acknowledgement
+  - Social media links (as text links)
+  - Copyright notice
+
+ 5. Mandatory semantic HTML usage:
+  - <header>, <nav>, <main>, <section>, <article>, <footer>, <fieldset>, <legend>
+
+ 6. Clean, valid, accessible HTML only
+
+  GOAL:
+Stimulate a professional international tech conference portal, improve large-scale HTML structuring, and further increase typing endurance.
+  
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Global Tech Conference 2026 - Official Portal</title>
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>Global Tech Conference 2026</h1>
+            <p>Innovating the Future of Technology Together</p>
+
+            <nav>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Conference</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Sessions</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Conference Overview -->
+             <section>
+
+                <h2>Conference Overview</h2>
+
+                <img src="conference-banner.jpg" alt="Global Tech Conference 2026 banner" width="600">
+
+                <p>
+                    Global Tech Conference 2026 is an international technology summit that brings together developers, researchers, industry leaders, and students from around the world. The conference focuses on emergining technologies, real-world innovation, and future-ready digital solutions.
+                </p>
+
+                <p>
+                    Over the course of three days, attendees will participate in keynote talks, technical sessions, workshops, and panel discussions covering artificial intelligence, cybersecurity, cloud computing, web development, data science, and ethical technology practices.
+                </p>
+
+                <p><strong>Dates:</strong> 15-17 August 2026</p>
+
+                <p><strong>Venue:</strong><br>
+                    International Convention Centre, <br>
+                    Tech Park Avenue, <br>
+                    Bengaluru, Karnataka, India
+                </p>
+             </section>
+
+             <!-- Keynote Speakers -->
+              <section>
+
+                <h2>Keynote Speakers</h2>
+
+                <article>
+
+                    <h3>Dr. Ayesha Khan</h3>
+                    <p><strong>Designation:</strong> AI Research Scientist</p>
+                    <p><strong>Organization:</strong> FutureLabs AI</p>
+                    <p>
+                        Dr. Khan specializes in ethical articial intelligence and large-scale machine learning systems used in healthcare and finance.
+                    </p>
+                    <p><strong>Session Topic:</strong>Responsible AI in the Modern World</p>
+                </article>
+
+                <article>
+
+                    <h3>Mr. Daniel Roberts</h3>
+                    <p><strong>Designation:</strong> Cloud Architect</p>
+                    <p><strong>Organization:</strong>SkyNet Solutions</p>
+                    <p>
+                        Daniel has over 15 years of experience designing scalable clour infrastructure for global enterprises.
+                    </p>
+                    <p><strong>Session Topic:</strong> Building Resilient Cloud Systems</p>
+                </article>
+
+                <article>
+
+                    <h3>Ms. Riya Mehta</h3>
+                    <p><strong>Designation:</strong> Senior Frontend Engineer</p>
+                    <p><strong>Organization:</strong> WebWorks Inc.</p>
+                    <p>
+                        Riya focuses on accessibility-first web design and performance-driven frontend architecture.
+                    </p>
+                    <p><strong>Session Topic:</strong> The Future of Web Development</p>
+                </article>
+
+                <article>
+
+                    <h3>Prof. Michael Chen</h3>
+                    <p><strong>Designation:</strong> Professor of Computer Science</p>
+                    <p><strong>Organization:</strong> Global Institute of Technology</p>
+                    <p>
+                        Prof. Chen's research spans distributed systems, networking, and next-generation computing models.
+                    </p>
+                    <p><strong>Session Topic:</strong> Computing Beyond the Cloud</p>
+                </article>
+              </section>
+
+              <!-- Event Schedule -->
+               <section>
+
+                <h2>Event Schedule</h2>
+
+                <table border="1">
+
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Session</th>
+                        <th>Speaker</th>
+                        <th>Hall</th>
+                    </tr>
+
+                    <tr>
+                        <td>15 Aug 2026</td>
+                        <td>10:00 - 11:30 AM</td>
+                        <td>Responsible AI in the Modern World</td>
+                        <td>Dr. Ayesha Khan</td>
+                        <td>Hall A</td>
+                    </tr>
+
+                    <tr>
+                        <td>15 Aug 2026</td>
+                        <td>12:00 - 13:30 PM</td>
+                        <td>Future of Web Development</td>
+                        <td>Riya Mehta</td>
+                        <td>Hall B</td>
+                    </tr>
+
+                    <tr>
+                        <td>16 Aug 2026</td>
+                        <td>10:00 - 11:30 AM </td>
+                        <td>Building Resilient Cloud Systems</td>
+                        <td>Daniel Roberts</td>
+                        <td>Hall A</td>
+                    </tr>
+
+                    <tr>
+                        <td>17 Aug 2026</td>
+                        <td>11:00 - 12:30 </td>
+                        <td>Computing Beyond the Cloud</td>
+                        <td>Prof. Michael Chen</td>
+                        <td>Hall C</td>
+                    </tr>
+                </table>
+               </section>
+
+               <!-- Technical Session -->
+                <section>
+
+                    <h2>Technical Sessions</h2>
+
+                    <ul>
+                        <li>Artificial Intelligence & Machine Learning
+                            <p>
+                                Sessions focusing on real-world AI applications, ethical challenges, and future research directions.
+                            </p>
+                        </li>
+                        <li>
+                            Web & Frontend Engineering
+                            <p>
+                                Modern frontend tools, accessibility, performance optimization and user-centric design.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Attendee Registration -->
+                 <section>
+
+                    <h2>Attendee Registration</h2>
+
+                    <form>
+                        <label for="attendee-name">Full Name:</label><br>
+                        <input type="text" id="attendee-name" name="attendee-name"><br><br>
+
+                        <label for="attendee-email">Email Address:</label><br>
+                        <input type="email" id="attendee-email" name="attendee-email"><br><br>
+
+                        <label for="organization">Organization:</label><br>
+                        <input type="text" id="organization" name="organization"><br><br>
+
+                        <fieldset>
+                            <legend>Role</legend>
+                            <label><input type="radio" name="role"> Student</label><br>
+                            <label><input type="radio" name="role"> Professional</label><br>
+                            <label><input type="radio" name="role"> Researched</label>
+                        </fieldset><br>
+
+                        <fieldset>
+                            <legend>Days Attending</legend>
+                            <label><input type="checkbox"> Day 1</label><br>
+                            <label><input type="checkbox"> Day 2</label><br>
+                            <label><input type="checkbox"> Day 3</label>
+                        </fieldset><br>
+
+                        <label for="diet">Dietary Preference:</label><br>
+                        <select id="diet" name="diet">
+                            <option>None</option>
+                            <option>Vegetarian</option>
+                            <option>Vegan</option>
+                            <option>Gluten-Free</option>
+                        </select><br><br>
+
+                        <input type="submit" value="Register as Attendee">
+                    </form>
+                 </section>
+
+                 <!-- Speaker Registration -->
+                  <section>
+
+                    <h2>Speaker Registration</h2>
+
+                    <form>
+                        <label for="speaker-name">Full Name:</label><br>
+                        <input type="text" id="speaker-name"><br><br>
+
+                        <label for="speaker-email">Email Address:</label><br>
+                        <input type="email" id="speaker-email"><br><br>
+
+                        <label for="speaker-org">Organization:</label><br>
+                        <input type="text" id="speaker-org"><br><br>
+
+                        <label for="session-title">Session Title:</label><br>
+                        <input type="text" id="session-title"><br><br>
+
+                        <label for="abstract">Session Abstract:</label><br>
+                        <textarea id="abstract" rows="4" cols="50"></textarea><br><br>
+
+                        <label>
+                            <input type="checkbox">
+                            I confirm my availability for the conference dates
+                        </label><br><br>
+
+                        <input type="submit" value="Register as Speaker">
+                    </form>
+                  </section>
+
+                  <!-- Guidelines -->
+
+                  <section>
+
+                    <h2>Conference Guidelines & Policies</h2>
+
+                    <ol>
+                        <li>Respect all attendees, speakers, and organizers</li>
+                        <li>Follow the conference code of conduct</li>
+                        <li>Do no record sessions without permission</li>
+                        <li>Maintain inclusivity and professionalism</li>
+                    </ol>
+
+                    <p>
+                        The Global Tech Conference is committed to providing a safe, inclusive and respectful environment for all participants. Any form of harassment, discrimination, or unethical behaviour will not be tolerated. 
+                    </p>
+                  </section>
+
+                  <!-- Contact -->
+                   <section>
+
+                    <h2>Contact & Support</h2>
+
+                    <p>Email: Support@globaltechconf2026.com</p>
+                    <p>Phone: +91 90000 12345</p>
+                    <p>
+                        Support hours are from Monday to Friday, 9:00 AM to 6:00 PM IST.
+                    </p>
+                   </section>
+
+        </main>
+
+        <footer>
+            <p>Organized by Global Tech Events Pvt. Ltd.</p>
+            <p>Sponsored by leading technology partners worldwide.</p>
+            <p>
+                Follow us:
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </p>
+            <p>&copy; 2026 Global Tech Conference</p>
+        </footer>
+
+    </body>
+    
+ </html>

@@ -12,7 +12,6 @@ This repo will be updated regularly as I learn more.
 
 ## Screenshots
 
-![Homepage](homepage.png)
 ![Form](form.png)
 
 

@@ -10,8 +10,5 @@ This repository contains my practice files while learning HTML from scratch.
 
 This repo will be updated regularly as I learn more.
 
-## Screenshots
-
-![Form](form.png)
 
 

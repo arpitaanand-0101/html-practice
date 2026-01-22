@@ -1,0 +1,396 @@
+<!-- 
+ Problem Statement:
+ 
+ Create a Global Freelance Marketplace - User Dashboard webpage using only HTMl.
+ 
+ Scenario: 
+ This webpage represents a freelancer's dashboard where users can manage their profile, view active projects, browse job listings, submit proposals, track earnings, and provide platform feedback.
+ 
+ Requirements:
+
+ 1. Page Title:
+   - Global Freelance Marketplace - User Dashboard
+
+ 2. Header section must include:
+   - Marketplace name as main heading
+   - Platform tagline
+   - Navigation menu with links
+     * Dashboard
+     * Find Work
+     * My Projects
+     * Earnings
+     * Messages
+     * Profile
+     * Logout
+
+ 3. Main content must include ALL the following sections:
+
+  A. User Profile Overview
+    - Full name
+    - Username
+    - Professional title
+    - Short professional summary (long paragraph)
+    - Skills list (unordered list)
+    - Profile image with alt text
+
+  B. Active Projects
+   - Minimum 3 projects
+   - Each project inside an <article>
+   - Include:
+     * Project ID
+     * Client name
+     * Project title
+     * Budget
+     * Deadline
+     * Project status
+     * Long project description
+
+  C. Job listings
+    - Table with:
+      * Job ID
+      * Job title
+      * Required skills
+      * Budget range
+      * Project duration
+
+  D. Proposal Submission Form:
+    - Job ID (text input)
+    - Proposal title
+    - Cover letter (textarea)
+    - Expected Budget (number input)
+    - Esimated Duration (select dropdown)
+    - Agreement checkbox
+    - Submit proposal button
+    - All labels must be properly associated
+
+  E. Earnings summary:
+    - Table displaying:
+      * Month
+      * Projects completed
+      * Earnings amount 
+      *Payment status
+
+  F. Payment withdrawal form:
+    - Withdrawal Amount (number input)
+    - Payment method (radio buttons)
+    - Account details (text input)
+    - Declaration checkbox
+    - Withdraw button
+
+  G. Platform feedback
+    - Feedback category (select dropdown)
+    - Platform rating (radio buttons)
+    - Feedback message (textarea)
+    - Submit button
+
+  H. Marketplace Guidelines & Policies:
+    - Ordered list of rules
+    - Very long paragraph covering platform ethics, fair work policies, payment protection, and user conduct
+
+ 4. Footer section must include:
+   - Marketplace contact information
+   - Legal & compliance notice
+   - Terms & Privacy links (as text)
+   - Copyright notice
+
+ 5. Mandatory semantic HTML usage:
+   - <header>, <nav>, <main>, <section>, <article>, <footer>, <fieldset>, <legend>
+
+ 6. Use clean, valid, accessible HTML only
+
+ GOAL: 
+ Create a complex, professional freelance dashboard layout, strengthen large-page HTML structuring, and push typing endurance close to maximum.
+ 
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Global Freelance Marketplace - User Dashboard</title>
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>WorkSphere</h1>
+            <p>Connecting Talent with Opportunity Worldwide</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Find Work</a></li>
+                    <li><a href="#">My Projects</a></li>
+                    <li><a href="#">Earnings</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- User Profile -->
+
+            <section>
+
+                <h2>User Profile Overview</h2>
+
+                <img src="freelancer.jpg" alt="Freelancer Profile" width="150">
+
+                <p><strong>Full Name:</strong> Arpita Anand</p>
+                <p><strong>Username:</strong> arpita_codes</p>
+                <p><strong>Professional Title:</strong> Aspiring Web Developer</p>
+
+                <p>
+                    I am motivated and detail-oriented aspiring web developer with a strong interest in building accessible, user-friendly web interfaces. I enjoy learning web technologies, working on real-world, and continuously improving my skills through hands-on practise and collaboration.
+                </p>
+
+                <p>
+
+                    <h3>Skills</h3>
+
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS Basics</li>
+                        <li>SQL & Database Design</li>
+                        <li>Problem Solving</li>
+                        <li>Version Control (Git & GitHub)</li>
+                    </ul>
+                </p>
+
+            </section>
+
+                <!-- Active Projects -->
+
+                <section>
+
+                    <h2>Active Projects</h2>
+
+                    <article>
+
+                        <h3>Project ID: PRJ-1021</h3>
+                        <p><strong>Client:</strong> TechNova Solutions</p>
+                        <p><strong>Project Title:</strong> Company Portfolio Website</p>
+                        <p><strong>Budget:</strong> $600</p>
+                        <p><strong>Deadline:</strong> 30 June 2026</p>
+                        <p><strong>Status:</strong> In Progress</p>
+                        <p>
+                            This project involves designing and developing a responsive portfolio website to showcase the client's services, previous work, and contact information using clean and semantic HTML structure.
+                        </p>
+                    </article>
+
+                    <article>
+
+                        <h3>Project ID: PRJ-1034</h3>
+                        <p><strong>Client:</strong> EduLearn Pvt. Ltd.</p>
+                        <p><strong>Project Title:</strong> Course Landing Page</p>
+                        <p><strong>Budget:</strong> $350</p>
+                        <p><strong>Deadline:</strong> 15 July 2026</p>
+                        <p><strong>Status:</strong> Pending Review</p>
+                        <p>
+                            Creation of a structured landing page for an online course platform focusing on clarity, accessibility, and simple user navigation.
+                        </p>
+                    </article>
+
+                    <article>
+
+                        <h3>Project ID: PRJ-1047</h3>
+                        <p><strong>Client:</strong> HealthPlus Network</p>
+                        <p><strong>Project Title:</strong> Appointment Booking Interface</p>
+                        <p><strong>Budget:</strong> $800</p>
+                        <p><strong>Deadline:</strong> 05 August 2026</p>
+                        <p><strong>Status:</strong> Approved</p>
+                        <p>
+                            Development of a patient-facing appointment booking interface using semantic HTML forms to ensure usability and accessibility.
+                        </p>
+                    </article>
+                </section>
+
+                <!-- Job Listings -->
+
+                <section>
+
+                    <h2>Job Listings</h2>
+
+                    <table border="1">
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Job Title</th>
+                            <th>Required</th>
+                            <th>Budget Range</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>JOB-501</td>
+                            <td>Static Website Development</td>
+                            <td>HTML, CSS</td>
+                            <td>$300 - $500</td>
+                            <td>2 weeks</td>
+                        </tr>
+                        <tr>
+                            <td>JOB-518</td>
+                            <td>Database Design Preject</td>
+                            <td>SQL, DBMS</td>
+                            <td>$400-$700</td>
+                            <td>3 Weeks</td>
+                        </tr>
+                        <tr>
+                            <td>JOB-532</td>
+                            <td>Landing Page Optimization</td>
+                            <td>HTML, UX Basics</td>
+                            <td>$250-$450</td>
+                            <td>10 Days</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Proposal Form -->
+
+                <section>
+
+                    <h2>Submit a Proposal</h2>
+
+                    <form>
+                        <label for="job-id">Joob ID:</label><br>
+                        <input type="text" id="job-id" name="job-id"><br><br>
+
+                        <label for="proposal-title">Proposal Title:</label><br>
+                        <input type="text" id="proposal-title" name="proposal-tile"><br><br>
+
+                        <label for="cover-letter">Cover Letter:</label><br>
+                        <textarea id="cover-letter" rows="4" cols="50"></textarea><br><br>
+
+                        <label for="duration">Estimated Duration:</label><br>
+                        <select id="duration">
+                            <option>1 Week</option>
+                            <option>2 Weeks</option>
+                            <option>1 Month</option>
+                        </select><br><br>
+
+                        <label>
+                            <input type="checkbox">
+                            I agree to the platform terms and project requirements
+                        </label><br><br>
+
+                        <input type="submit" value="Submit Proposal">
+                    </form>
+                </section>
+
+                <!-- Earnings -->
+                 <section>
+
+                    <h2>Earnings Summary</h2>
+
+                    <table border="1">
+                        <tr>
+                            <th>Month</th>
+                            <th>Projects Completed</th>
+                            <th>Earnings</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>March 2026</td>
+                            <td>2</td>
+                            <td>$1,200</td>
+                            <td>Paid</td>
+                        </tr>
+                        <tr>
+                            <td>April 2026</td>
+                            <td>1</td>
+                            <td>$600</td>
+                            <td>Pending</td>
+                        </tr>
+                    </table>
+                 </section>
+
+                 <!-- Withdrawal -->
+                  <section>
+
+                    <h2>Withdraw Earnings</h2>
+
+                    <form>
+                        <label for="withdraw-amount">Amount:</label><br>
+                        <input type="number" id="withdraw-amount"><br><br>
+
+                        <fieldset>
+                            <legend>Payment Method</legend>
+
+                            <label><input type="radio" name="payment"> Bank Transfer</label><br>
+                            <label><input type="radio" name="payment"> PayPal</label><br>
+                            <label><input type="radio" name="payment"> UPI</label>
+                        </fieldset><br>
+
+                        <label for="account-details">Account Details:</label><br>
+                        <input type="text" id="account-details"><br><br>
+
+                        <label>
+                            <input type="checkbox">
+                            I confirm the withdrawal details are correct
+                        </label><br><br>
+
+                        <input type="submit" value="Withdraw">
+                    </form>
+                  </section>
+
+                  <!-- Feedback -->
+                   <section>
+
+                    <h2>Platform Feedback</h2>
+
+                    <form>
+                        <label for="feedback-category">Category:</label><br>
+                        <select id="feedback-category">
+                            <option>User Experience</option>
+                            <option>Payments</option>
+                            <option>Support</option>
+                        </select><br><br>
+
+                        <fieldset>
+                            <legend>Rating</legend>
+                            <label><input type="radio" name="rating">Excellent</label><br>
+                            <label><input type="radio" name="rating">Good</label><br>
+                            <label><input type="radio" name="rating">Average</label><br>
+                            <label><input type="radio" name="rating">Poor</label>
+                        </fieldset><br>
+
+                        <label for="feedback-message">Feedback:</label><br>
+                        <textarea id="feedback-message" rows="4" cols="50"></textarea><br><br>
+
+                        <input type="submit" value="Submit Feedback">
+                    
+                    </form>
+                   </section>
+
+                   <!-- Policies -->
+                    <section>
+
+                        <h2>Marketplace Guidelines & Policies</h2>
+
+                        <ol>
+                            <li>Maintain professional communication at all times</li>
+                            <li>Deliver work as per agreed timelines</li>
+                            <li>Avoid plagiarism and unethical practices</li>
+                            <li>Respect platform payment and dispute policies</li>
+                        </ol>
+
+                        <p>
+                            WorkSphere promotes fair work opportunities, secure payments, and transparent collaboration between clients and freelancers. Any violation of platform policies may result in account suspension or termination.
+                        </p>
+                    </section>
+
+        </main>
+
+        <footer>
+            <p>Contact: support@worksphere.com | Phone: +1 800 456 7890</p>
+            <p>Legal & Compiance: All transactions are protected under platform policies.</p>
+            <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+            <p>&copy; 2026 WorkSphere Global Marketplace</p>
+        </footer>
+
+    </body>
+    
+ </html>

@@ -1,0 +1,416 @@
+<!-- 
+ 
+Problem Statement:
+
+Create a Smart Nation Digital GOvernance Portal - Citizen Services webpage using only HTML 
+
+Scenario:
+This webpage represents a national-level digital governance platform where citizens can access government services, submit applications, track requests, provide feedback, and stay informed about public policies and announcements.
+
+Requirement:
+
+1. Page title:
+     Smart Nation Digital Governance Portal
+
+2. Header section must include:
+  - National portal name as main heading
+  - Official government tagline
+  - Navigation menu with links:
+    * Home
+    * Citizen Services
+    * Departments 
+    * Applications
+    * Track status
+    * Announcemnets
+    * Feedback
+    * COntact
+
+3. Main content must include ALL the following sections:
+
+  A. Citizen Welcome & Profile Summary
+    - Citizen full name
+    - National ID number (dummy)
+    - Registered city and state
+    - Citizenship status
+    - Long descriptive paragraph explaining the purpose of the digital governance portal
+
+  B. Available Citizen Services
+    - Unordered list of services such as:
+      * Digital ID services
+      * Healthcare services
+      * Tax filing
+      * Education services
+      * Public utilities
+    - Each service must be followed by a descriptive paragraph explaining the service
+
+  C. Government Departments Directory
+     - Table with:
+       * Department name
+       * Service category
+       * Contact email
+       * Office location
+       * Working days
+
+  D. Online Service Application Form
+    - Full name
+    - National ID
+    - Service Type (select dropdown)
+    - Department selection (radio buttons)
+    - Application description (textarea)
+    - Document submission note (text)
+    - Declaration checkbox
+    - Submit Application button
+    - All labels must be properly associated
+
+  E. Application Status Tracking
+    - Table with:
+      * Application ID
+      * Service type
+      * Submission date
+      * Current status
+      * Assigned department
+
+  F. Public Announcements & Policies
+    - Minimum 3 announcements
+    - Each announcement inside and <article>
+    - Include:
+      * Announcement title
+      * Issue date
+      * Long explanatory paragraph
+
+  G. Citizen feedback & Grievance Form
+    - Feedback type (select dropdown)
+    - Concern Category (radio buttons)
+    - Detailed message (textarea)
+    - Rating (radio buttons)
+    - Submit Feedback button
+
+  H. Digital Governance Ethics & Policies
+    - Ordered list of ethical principles
+    - Very long paragraph covering:
+      data privacy, transparency, accessibility, citizen rights, and digital inclusion
+
+4. Footer section must include:
+  - Government contect information
+  - Emergency helpline numbers
+  - Accessibility statement
+  - Legal disclaimer
+  - Copyright notice
+
+5. Mandatory semantic HTML usage:
+  - <header>, <nav>, <main>, <section>, <article>, <footer>, <fieldset>, <legend>
+
+6. Use clean, valid, accessible HTML only
+
+GOAL: 
+Simulate a real national digital governance portal, demonstrate mastery of HTML page structureing, semantic correctness, accessibility awareness, and maximum typing endurance.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Smart Nation DIgital Governance Portal</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Smart Nation Digital Governance Portal</h1>
+
+            <p>Empowering Citizens Through Transparent & Accessible Digital Serives</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Citizen Services</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Applications</a></li>
+                    <li><a href="#">Track Status</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Citizen Profile -->
+             <section>
+
+                <h2>Citizen Profile Summary</h2>
+
+                <p><strong>Full Name:</strong> Arpita Anand</p>
+                <p><strong>National:</strong> IND-2026-458712</p>
+                <p><strong>City & State:</strong> Bengaluru, Karnataka</p>
+                <p><strong>Citzenship Status:</strong> Indian Citizen</p>
+
+                <p>
+                    The Smart Nation Digital Governance Portal is a unified platform designed to provide citizens with seamless access to essential government services.
+                    It aims to reduce paperwork, increase transparency, and ensure that public services are accessible to every citizen regardless of location.
+                    Through this portal, citizens can apply for services, track application status, stay informed about public policies, and actively participate in governance through feedback and grievance mechanisms.
+                </p>
+             </section>
+
+             <!-- Services -->
+              <section>
+
+                <h2>Available Citizen Services</h2>
+
+                <ul>
+                    <li>Digital Identity Services</li>
+                </ul>
+
+                <p>
+                    Citizens can manage their digital identity, update demographic details and access government-issued digital certificates securely online.
+                </p>
+
+                <ul>
+                    <li>Healthcare Services</li>
+                </ul>
+
+                <p>
+                    Access public healthcare schemes, insurance benefits, hospital registrations, and digital health records through a centralized healthcare service system.
+                </p>
+
+                <ul>
+                    <li>Tax filing & Financial Services</li>
+                </ul>
+
+                <p>
+                    File income tax returns, view tax payment history, and access financial assistance programs provided by the government.
+                </p>
+
+                <ul>
+                    <li>Education Services</li>
+                </ul>
+
+                <p>
+                    Apply for scholarships, verify academic crudentials, and access national education initiatives through secure digital platforms.
+                </p>
+
+                <ul>
+                    <li>Public Utilities</li>
+                </ul>
+
+                <p>
+                    Manage electricity, water, and gas services, submit complaints, and track service requests digitally without visiting physical offices.
+                </p>
+              </section>
+
+              <!-- Departments -->
+               <section>
+
+                <h2>Government Departments Directory</h2>
+
+                <table border="1">
+                    <tr>
+                        <th>Department Name</th>
+                        <th>Service Category</th>
+                        <th>Contact Email</th>
+                        <th>Office Location</th>
+                        <th>Working Days</th>
+                    </tr>
+                    <tr>
+                        <td>Ministry of Digital Affairs</td>
+                        <td>IT & Identity Services</td>
+                        <td>digital@gov.in</td>
+                        <td>New Delhi</td>
+                        <td>Mon - Fri</td>
+                    </tr>
+                    <tr>
+                        <td>Ministry of Health</td>
+                        <td>Healthcare</td>
+                        <td>health@gov.in</td>
+                        <td>New Delhi</td>
+                        <td>Mon - Sat</td>
+                    </tr>
+                    <tr>
+                        <td>Ministry of Finance</td>
+                        <td>Tax & Finance</td>
+                        <td>finance@gov.in</td>
+                        <td>Mumbai</td>
+                        <td>Mon - Fri</td>
+                    </tr>
+                </table>
+               </section>
+
+               <!-- Application Form -->
+                <section>
+
+                    <h2>Online Service Application</h2>
+
+                    <form>
+                        <label for="full-name">Full Name:</label><br>
+                        <input type="text" id="full-name"><br><br>
+
+                        <label for="national-id">National ID:</label><br>
+                        <input type="text" id="national-id"><br><br>
+
+                        <label for="service-type">Service Type:</label><br>
+                        <select id="service-type">
+                            <option>Digital ID</option>
+                            <option>Healthcare</option>
+                            <option>Tax Filing</option>
+                            <option>Education</option>
+                            <option>Public Utilities</option>
+                        </select><br><br>
+
+                        <fieldset>
+                            <legend>Department</legend>
+                            <label><input type="radio" name="department"> Digital Affairs</label><br>
+                            <label><input type="radio" name="department"> Health</label><br>
+                            <label><input type="radio" name="department"> Finance</label>
+                        </fieldset><br>
+
+                        <label for="application-desc">Application Description:</label><br>
+                        <textarea id="application-desc" rows="4" cols="50"></textarea><br><br>
+
+                        <p>Note: Supporting documents must be submitted digitally after application.</p>
+
+                        <label>
+                            <input type="checkbox">
+                            I declare that the information provided is accurate
+                        </label><br><br>
+
+                        <input type="submit" value="Submit Application">
+                    </form>
+                </section>
+
+                <!-- Tracking -->
+                 <section>
+
+                    <h2>Application Status Tracking</h2>
+
+                    <table border="1">
+                        <tr>
+                            <th>Application ID</th>
+                            <th>Service Type</th>
+                            <th>Submission Date</th>
+                            <th>Status</th>
+                            <th>Assigned Departments</th>
+                        </tr>
+
+                        <tr>
+                            <td>APP-7812</td>
+                            <td>Healthcare</td>
+                            <td>12 May 2026</td>
+                            <td>Under Review</td>
+                            <td>Ministry of Health</td>
+                        </tr>
+
+                        <tr>
+                            <td>APP-7901</td>
+                            <td>Tax Filing</td>
+                            <td>02 June 2026</td>
+                            <td>Approved</td>
+                            <td>Ministry of Finance</td>
+                        </tr>
+
+                    </table>
+                 </section>
+
+                 <!-- Announcements -->
+                  <section>
+
+                    <h2>Public Announcememts & Policies</h2>
+
+                    <article>
+
+                        <h3>National Digital ID Expansion</h3>
+                        <p><strong>Issue Date:</strong> 01 June 2026</p>
+                        <p>
+                            The government has explanded digital identity services to ensure faster verification and improved access to public services nationwide.
+                        </p>
+                    </article>
+
+                    <article>
+                        
+                        <h3>Healthcare Portal Upgrade</h3>
+                        <p><strong>Issue Date:</strong> 15 May 2026</p>
+                        <p>
+                            New healthcare feauture now allow citizens to access medical history, insurance claims, and appointment bookings through a unified system.
+                        </p>
+                    </article>
+
+                    <article>
+
+                        <h3>Tax Filing Deadline Extension</h3>
+
+                        <p><strong>Issue Date:</strong> 20 April 2026</p>
+                        <p>
+                            The tax filing deadline had been extended to ensure smoother digital submissions and better citizen compliance.
+                        </p>
+                    </article>
+                  </section>
+
+                  <!-- Feedback -->
+
+                  <section>
+
+                    <h2>Citizen Feedback & Grievance</h2>
+
+                    <form>
+                        <label for="feedback-type">Feedback Type:</label><br>
+                        <select id="feedback-type">
+                            <option>Service Feedback</option>
+                            <option>Grievance</option>
+                            <option>Suggestion</option>
+                        </select><br><br>
+
+                        <fieldset>
+                            <legend>Concern Category</legend>
+                            <label><input type="radio" name="concern"> Service Delay</label><br>
+                            <label><input type="radio" name="concern"> Technical Issue</label><br>
+                            <label><input type="radio" name="concern"> Policy Related</label>
+                        </fieldset><br>
+
+                        <label for="feedback-msg">Message:</label><br>
+                        <textarea id="feedback-msg" rows="4" cols="50"></textarea><br><br>
+
+                        <fieldset>
+                            <legend>Rating</legend>
+                            <label><input type="radio" name="rating"> Excellent</label>
+                            <label><input type="radio" name="rating"> Good</label>
+                            <label><input type="radio" name="rating"> Average</label>
+                            <label><input type="radio" name="rating"> Poor</label>
+                        </fieldset><br>
+
+                        <input type="submit" value="Submit Feedback">
+
+                    </form>
+                  </section>
+
+                  <!-- Ethics -->
+                   <section>
+
+                    <h2>Digital Governance Ethics & Policies</h2>
+
+                    <ol>
+                        <li>Transparency in public services</li>
+                        <li>Data privacy and security</li>
+                        <li>Equal access for all citizens</li>
+                        <li>Accountability and trust</li>
+                    </ol>
+
+                    <p>
+                        The Smart Nation initiative prioritizes ethical digital governance by safeguarding citizen data, ensuring transparency in decision-making, promoting accessibility for all users, and fostering trust between citizens and government institutions.
+                    </p>
+                   </section>
+
+        </main>
+
+        <footer>
+            <p>Government Contact: support@smartnation.gov.in</p>
+            <p>Emergency Helpline:112 | Disaster Management: 108</p>
+            <p>This portal follows national accessibility and digital inclusion standards</p>
+            <p>Legal Disclaimer: Information provided is subject to official verification.</p>
+            <p>&copy; 2026 Government of India - Smart Nation Initiative</p>
+        </footer>
+
+    </body>
+    
+</html>
